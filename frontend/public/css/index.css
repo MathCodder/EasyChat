@@ -1,0 +1,399 @@
+@import url("https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Zain:wght@200;300;400;700;800;900&display=swap");
+
+:root {
+  --vert: #00bf63;
+  --blanc: #ffff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "HammersmithOne", sans-serif;
+}
+
+body {
+  background-color: black;
+  color: white;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+main {
+  width: 100%;
+}
+
+.text-vert {
+  color: var(--vert);
+}
+
+.left {
+  display: flex;
+  min-height: 150vh;
+  max-width: 40%;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  margin-left: 150px;
+}
+
+.left,
+.right {
+  filter: none;
+}
+
+.text h1 {
+  font-size: 80px;
+}
+
+.text p {
+  font-size: 23px;
+  font-style: italic;
+  font-weight: lighter;
+  margin-left: 5px;
+}
+
+.left .image-box {
+  position: absolute;
+  margin-left: 100%;
+  margin-bottom: 70%;
+}
+
+.image-box i {
+  font-size: 150px;
+}
+
+.right {
+  position: absolute;
+  display: flex;
+  margin-left: 60%;
+  margin-top: 15%;
+  flex-direction: column;
+}
+
+.right .titre-box h1 {
+  font-size: 70px;
+  max-width: 75%;
+}
+
+.titre-box p {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-left: 5px;
+}
+
+.button-box {
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+}
+
+.button-box button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 17px;
+  border: none;
+  font-weight: bold;
+  width: 30%;
+}
+
+#signup {
+  color: var(--vert);
+}
+
+#login {
+  margin-top: 25px;
+  background-color: var(--vert);
+  color: var(--blanc);
+}
+
+.box-register-login {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.login,
+.register {
+  display: flex;
+  border-radius: 50px;
+  width: 500px;
+  height: 550px;
+  background-color: white;
+  position: absolute;
+  color: black;
+
+  flex-direction: column;
+  box-shadow: 0 0 4px 4px rgba(53, 53, 53, 0.4);
+}
+
+.login,
+.register {
+  display: none;
+}
+
+.login h1,
+.register h1 {
+  max-width: 80%;
+  margin: 0 auto;
+  font-size: 35px;
+  margin-top: 20px;
+}
+
+.topBar {
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  padding: 50px;
+  margin: 0 auto;
+}
+
+.input-box input {
+  padding: 15px 40px;
+  text-align: left;
+  background-color: black;
+  color: white;
+  font-size: 18px;
+  border-radius: 15px;
+  border: none;
+}
+
+input::placeholder {
+  color: white;
+  position: relative;
+  right: 20px;
+  font-size: 18px;
+}
+
+#password {
+  margin-top: 60px;
+}
+
+.topBar i {
+  margin-top: 20px;
+  margin-left: 20px;
+  font-size: 30px;
+  color: var(--vert);
+}
+
+.topBar i:hover {
+  cursor: pointer;
+}
+
+#connectButton,
+#inscriptionButton {
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 25px;
+  border-radius: 40px;
+  border: none;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+}
+
+.register .input-box {
+  padding: 30px;
+  margin-top: 0px;
+}
+
+.register .input-box #password-register {
+  margin-top: 15px;
+}
+
+#confirmed-pass {
+  margin-top: 15px;
+}
+
+.check-input {
+  margin-top: 20px;
+}
+
+.check-input input {
+  margin-left: 20px;
+}
+
+button#signup:hover {
+  background-color: var(--vert);
+  color: var(--blanc);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1024px) {
+  .left,
+  .right {
+    display: block;
+    position: static;
+    min-height: auto;
+    max-width: 100%;
+    margin-left: 100px;
+  }
+
+  .right {
+    margin-top: 100px;
+  }
+
+  .left {
+    margin-top: 5%;
+  }
+  .left .image-box {
+    position: relative;
+    margin-left: 35%;
+    margin-bottom: 0;
+  }
+
+  .image-box i {
+    font-size: 100px;
+  }
+
+  .button-box button {
+    width: 40%;
+  }
+
+  .login,
+  .register {
+    bottom: 15%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .left {
+    margin: 50px;
+  }
+
+  .left,
+  .right {
+    margin-left: 50px;
+  }
+
+  .left .text h1 {
+    font-size: 60px;
+  }
+
+  .image-box i {
+    font-size: 80px;
+  }
+
+  .right .titre-box h1 {
+    font-size: 50px;
+  }
+
+  .login,
+  .register {
+    width: 400px;
+    height: 450px;
+    bottom: 25%;
+  }
+
+  .register h1 {
+    font-size: 28px;
+  }
+
+  #connectButton {
+    margin-top: 0px;
+  }
+
+  .input-box input {
+    padding: 10px;
+    font-size: 15px;
+  }
+
+  .input-box input::placeholder {
+    font-size: 15px;
+    left: 10px;
+  }
+
+  .check-input input {
+    margin-left: 5px;
+  }
+
+  #inscriptionButton {
+    margin-top: 0;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .left {
+    margin-top: 30px;
+  }
+  .right {
+    margin-top: 50px;
+  }
+
+  .button-box button {
+    width: 65%;
+  }
+
+  .login,
+  .register {
+    width: 300px;
+    height: 350px;
+    bottom: 30%;
+  }
+
+  .register h1 {
+    margin-top: 5px;
+    font-size: 25px;
+  }
+
+  .login h1 {
+    font-size: 25px;
+  }
+
+  .box-register-login {
+    margin-top: 0;
+    top: 70%;
+  }
+
+  .input-box {
+    margin-top: 0;
+  }
+
+  .register .input-box {
+    padding: 15px;
+  }
+  .register .check-input {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #inscriptionButton {
+    padding: 5px;
+  }
+
+  #password {
+    margin-top: 20px;
+  }
+
+  .input-box input {
+    margin-top: 0;
+    padding: 0;
+  }
+
+  #connectButton {
+    margin-top: 0px;
+    padding: 10px;
+  }
+
+  .input-box input {
+    padding: 10px;
+    font-size: 15px;
+  }
+
+  .input-box input::placeholder {
+    font-size: 15px;
+    left: 10px;
+  }
+}

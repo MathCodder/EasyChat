@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
+    <script
+      src="https://kit.fontawesome.com/59ac5b43e4.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/scripts.js" defer></script>
+    <script src="js/connexionSignUpApi.js" defer></script>
+    <script src="js/connexionLoginApi.js" defer></script>
+    <title>EasyChat</title>
+  </head>
+  <body>
+    <main>
+      <div class="left">
+        <div class="image-box">
+          <i class="fa-solid fa-message text-vert"></i>
+        </div>
+        <div class="text">
+          <h1>EasyChat</h1>
+          <p>un réseau social en mieux</p>
+        </div>
+      </div>
+      <div class="right">
+        <div class="titre-box">
+          <h1>Ça se passe <span class="text-vert">maintenant</span></h1>
+          <p>Inscrivez-vous<span class="text-vert">.</span></p>
+        </div>
+        <div class="button-box">
+          <button id="signup">Créer un compte</button>
+          <button id="login">Se connecter</button>
+        </div>
+      </div>
+
+      <div class="box-register-login" id="box-register-login">
+        <div class="login" id="loginPage">
+          <div class="topBar">
+            <i class="fa-solid fa-xmark croix"></i>
+          </div>
+          <h1>Connectez-vous</h1>
+          <div class="input-box">
+            <input id="pseudo-login" type="text" placeholder="Pseudo" />
+            <input id="password" type="password" placeholder="Mots de Passe" />
+          </div>
+          <button id="connectButton">Me connecter</button>
+        </div>
+
+        <div class="register" id="registerPage">
+          <div class="topBar">
+            <i class="fa-solid fa-xmark croix-register"></i>
+          </div>
+          <h1>Créer vôtre compte</h1>
+          <div class="input-box">
+            <input id="pseudo-register" type="text" placeholder="Pseudo" />
+            <input
+              id="password-register"
+              type="password"
+              placeholder="Mots de Passe"
+            />
+            <input
+              id="confirmed-pass"
+              type="password"
+              placeholder="Confirmation"
+            />
+            <div class="check-input">
+              <input type="checkbox" class="check" />
+              <label for="check">Femme</label>
+              <input type="checkbox" class="check" />
+              <label for="check">Homme</label>
+              <input type="checkbox" class="check" />
+              <label for="check">Autre</label>
+            </div>
+          </div>
+          <button id="inscriptionButton">M'inscrire</button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

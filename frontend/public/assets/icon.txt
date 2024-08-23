@@ -1,0 +1,4 @@
+Tchat : <i class="fa-solid fa-message"></i>
+Close : <i class="fa-solid fa-xmark"></i>
+Home : <i class="fa-solid fa-house"></i>
+User : <i class="fa-solid fa-user"></i>
